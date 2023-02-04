@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700">
+</head>
+<body>
+  <div class="container">
+    <div class="images">
+      <picture>
+        <source media="(min-width: 1005px)" srcset="images/illustration-box-desktop.svg">
+        <img src="images/illustration-woman-online-mobile.svg" alt="">
+      </picture>
+    </div>
+    <div class="section-faq">
+      <h1>FAQ</h1>
+      <div class="FAQs faq-1">
+        <div class="dropdown-menu">
+          <div class="question 1" onclick="answer(1)">
+            How many team members can I invite?
+          </div>
+          <img class="tab 1" src="images/icon-arrow-down.svg" onclick="answer(1)">
+        </div>
+        <div class="answer 1">
+          You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
+        </div>
+      </div>
+      <div class="FAQs faq-2">
+        <div class="dropdown-menu">
+          <div class="question 2" onclick="answer(2)">
+            What is the maximum file upload size?
+          </div>
+          <img class="tab 2" src="images/icon-arrow-down.svg" onclick="answer(2)">
+        </div>
+        <div class="answer 2">
+          No more than 2GB. All files in your account must fit your allotted storage space.
+        </div>
+      </div>
+      <div class="FAQs faq-3">
+        <div class="dropdown-menu">
+          <div class="question 3" onclick="answer(3)">
+            How do I reset my password?
+          </div>
+          <img class="tab 3" src="images/icon-arrow-down.svg" onclick="answer(3)">
+        </div>
+        <div class="answer 3">
+          Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.
+        </div>
+      </div>
+      <div class="FAQs faq-4">
+        <div class="dropdown-menu">
+          <div class="question 4" onclick="answer(4)">
+            Can I cancel my subscription?
+          </div>
+          <img class="tab 4" src="images/icon-arrow-down.svg" onclick="answer(4)">
+        </div>
+        <div class="answer 4">
+          Yes! Send us a message and we’ll process your request no questions asked.
+        </div>
+      </div>
+      <div class="FAQs faq-5">
+        <div class="dropdown-menu">
+          <div class="question 5" onclick="answer(5)">
+            Do you provide additional support?
+          </div>
+          <img class="tab 5" src="images/icon-arrow-down.svg" onclick="answer(5)">
+        </div>
+        <div class="answer 5">
+          Chat and email support is available 24/7. Phone lines are open during normal business hours.
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
